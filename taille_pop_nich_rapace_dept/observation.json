@@ -1,0 +1,111 @@
+{
+  "display_properties": [
+    "cd_nom",
+    "min_max_ou_unique",
+    "couples_territoriaux_min",
+    "couples_territoriaux_max",
+    "couples_repro_min",
+    "couples_repro_max",
+    "couples_produc_min",
+    "couples_produc_max",
+    "jeune_envol_min",
+    "jeune_envol_max",
+    "comments"
+  ],
+
+  "display_list": [
+    "cd_nom",
+    "couples_territoriaux_min",
+    "couples_repro_min",
+    "couples_produc_min",
+    "jeune_envol_min"
+  ],
+
+  "keep":[
+    "cd_nom"
+  ],
+
+  "specific": {
+    "cd_nom":{
+      "value": 2856,
+      "hidden": true
+    },
+    "min_max_ou_unique":{
+      "type_widget":"radio",
+      "attribut_label":"Précision des valeurs",
+      "values": ["Valeur unique", "Min-Max"],
+      "required": false,
+      "hidden": false
+    },
+    "couples_territoriaux_min": {
+      "type_widget": "number",
+      "attribut_label": "Couples territoriaux",
+      "definition": "Couple ayant construit un nid",
+      "min":0,
+      "required": true,
+      "hidden": false
+    },
+    "couples_territoriaux_max": {
+      "type_widget": "number",
+      "attribut_label": "Couples territoriaux (max)",
+      "min":0,
+      "required": false,
+      "hidden": "({value}) => value.min_max_ou_unique != 'Min-Max'"
+    },
+    "couples_repro_min": {
+      "type_widget": "number",
+      "attribut_label": "Couples reproducteurs",
+      "definition": "Couple ayant pondu.",
+      "min":0,
+      "required": true,
+      "hidden": false
+    },
+    "couples_repro_max": {
+      "type_widget": "number",
+      "attribut_label": "Couples reproducteurs (max)",
+      "min":0,
+      "required": false,
+      "hidden": "({value}) => value.min_max_ou_unique != 'Min-Max'"
+    },
+    "couples_produc_min": {
+      "type_widget": "number",
+      "attribut_label": "Couples producteurs",
+      "definition": "Couple ayant produit un poussin. Identique à jeune à l'envol.",
+      "min":0,
+      "required": true,
+      "hidden": false
+    },
+    "couples_produc_max": {
+      "type_widget": "number",
+      "attribut_label": "Couples producteurs (max)",
+      "min":0,
+      "required": false,
+      "hidden": "({value}) => value.min_max_ou_unique != 'Min-Max'"
+    },
+    "jeune_envol_min": {
+      "type_widget": "number",
+      "attribut_label": "Jeunes à l'envol",
+      "definition": "Jeune à l'envol ou proche de l'envol",
+      "min":0,
+      "max":2,
+      "required": true
+    },
+    "jeune_envol_max": {
+      "type_widget": "number",
+      "attribut_label": "Jeunes à l'envol (max)",
+      "min":0,
+      "required": false,
+      "hidden": "({value}) => value.min_max_ou_unique != 'Min-Max'"
+    },
+    "comments": {
+      "type_widget": "text",
+      "attribut_label": "Commentaires"
+    },
+    "medias": {
+      "type_widget": "medias",
+      "attribut_label": "Médias",
+      "schema_dot_table": "gn_monitoring.t_observations",
+      "hidden": true
+    }
+  }
+}

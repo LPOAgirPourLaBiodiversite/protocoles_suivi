@@ -1,0 +1,103 @@
+{
+  "description_field_name": "annee",
+  "genre":"F",
+  "label": "Visite",
+  "label_list": "Visite",
+  
+
+  "display_properties": [
+    "id_base_site",
+    "visit_date_min",
+    "id_digitiser",
+    "comments",
+    "id_dataset",
+    "id_dataset_sinp_v2.0",
+    "nb_observations",
+    "id_nomenclature_fiabilite"
+  ],
+
+  "display_list": [
+    "annee",
+    "id_dataset",
+    "nb_observations"
+  ],
+  "sorts": [
+    {"prop": "annee", "dir": "desc"}
+  ],
+
+  "keep": [
+    "id_nomenclature_fiabilite",
+    "id_dataset_sinp_v2"
+  ],
+  
+  "specific": {
+    "plusieurs_annees":{
+      "type_widget":"radio",
+      "attribut_label":"Sur plusieurs années ?",
+      "values": ["Oui"],
+      "required": false,
+      "hidden": false
+    },
+    "annee":{
+      "type_widget": "number",
+      "attribut_label": "Année",
+      "required": true,
+      "min": 1800,
+      "max": 2050
+    },
+    "annee_max":{
+      "type_widget": "number",
+      "attribut_label": "Année (max)",
+      "hidden": "({value}) => value.plusieurs_annees != 'Oui'",
+      "required": false,
+      "min": 1800,
+      "max": 2050
+    },
+    "visit_date_min": {
+      "hidden": true,
+      "value": "{value.annee}+'-01-01",
+      "required": true
+    },
+    "visit_date_max": {
+      "required": false
+    },
+    "observers": {
+      "hidden": true
+    },
+    "id_digitiser": {
+      "type_widget": "text",
+      "attribut_label": "Digitiser",
+      "type_util": "user",
+      "required": true,
+      "hidden": true
+    },
+    "medias": {
+      "type_widget": "medias",
+      "attribut_label": "Médias",
+      "schema_dot_table": "gn_monitoring.t_base_visits",
+      "hidden": true,
+      "required": false
+    },
+    "id_nomenclature_fiabilite": {
+      "type_widget": "datalist",
+      "attribut_label": "Fiabilité",
+      "api": "nomenclatures/nomenclature/FIABILITE",
+      "application": "GeoNature",
+      "keyValue": "id_nomenclature",
+      "keyLabel": "label_fr",
+      "data_path": "values",
+      "type_util": "nomenclature",
+      "required": true,
+      "default": {
+          "cd_nomenclature": "0"
+      }
+    },
+    "id_dataset_sinp_v2.0": {
+      "type_widget": "number",
+      "attribut_label": "Jeu de données SINP V2.0",
+      "hidden": true,
+      "required": true,
+      "value": 70083
+    }
+  }
+}

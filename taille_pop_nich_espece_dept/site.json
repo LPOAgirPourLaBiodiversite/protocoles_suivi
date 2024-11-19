@@ -1,0 +1,63 @@
+{  
+  "genre": "M",
+  "label": "Site",
+  "label_list": "Sites",
+  "sorts": [
+    {"prop": "base_site_name", "dir": "asc"}
+  ],
+  "display_properties": [
+    "id_inventor",
+    "base_site_name",
+    "base_site_code",
+    "base_site_description",
+    "id_nomenclature_type_site",
+    "last_visit",
+    "nb_visits"
+  ],
+
+  "display_list": [
+    "base_site_name",
+    "base_site_code",
+    "nb_visits"
+  ],
+
+  "specific": {
+    "id_inventor": {
+      "required": false,
+      "hidden": true
+        },
+    "annee_site": {
+      "type_widget": "number",
+      "attribut_label": "Année de référence",
+      "required": false,
+      "hidden": false
+        },
+    "first_use_date": {
+      "value": "({value}) => { '01/01' || value.annee_site }",
+      "required": false,
+      "hidden": true
+        },
+    "base_site_name": {
+      "attribut_label": "Nom du site"
+        },
+    "base_site_code": {
+      "attribut_label": "Code du site",
+      "required": false,
+      "hidden": false
+        },
+    "base_site_description": {
+      "type_widget": "textarea",
+      "attribut_label": "Commentaire"
+    },
+    "id_nomenclature_type_site": {
+      "type_widget": "text",
+      "attribut_label": "Type site",
+      "type_util": "nomenclature",
+      "value": {
+        "code_nomenclature_type": "TYPE_SITE",
+        "cd_nomenclature": "DONNEE_SYNTHESE "
+      },
+      "hidden": false
+    }
+  }
+}

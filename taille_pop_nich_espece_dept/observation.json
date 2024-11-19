@@ -1,0 +1,72 @@
+{
+  "display_properties": [
+    "cd_nom",
+    "valeur_unique",
+    "count_min",
+    "count_max",
+    "id_nomenclature_unite",
+    "comments"
+  ],
+
+  "display_list": [
+    "cd_nom",
+    "count_min",
+    "count_max",
+    "id_nomenclature_unite"
+  ],
+
+  "keep":[
+    "cd_nom",
+    "id_nomenclature_unite"
+  ],
+
+  "specific": {
+    "cd_nom": {
+      "value": 3089,
+      "hidden": true
+    },
+    "valeur_unique":{
+      "type_widget":"radio",
+      "attribut_label":"Type de valeur",
+      "values": ["Valeur unique","Min - Max"],
+      "required": true,
+      "hidden": false
+    },
+    "count_min": {
+      "type_widget": "number",
+      "attribut_label": "Effectif (unique ou min)",
+      "required": true,
+      "min": 0,
+      "max": 100000000
+    },
+    "count_max": {
+      "type_widget": "number",
+      "attribut_label": "Effectif max",
+      "required": false,
+      "min": 0,
+      "max": 100000000,
+      "hidden": "({value}) => value.valeur_unique != 'Min - Max'"
+    },
+    "id_nomenclature_unite":{
+      "type_widget": "datalist",
+      "attribut_label": "Unité",
+      "api": "nomenclatures/nomenclature/UNITE_D_SYNTHESE",
+      "application": "GeoNature",
+      "keyValue": "id_nomenclature",
+      "keyLabel": "label_fr",
+      "data_path": "values",
+      "type_util": "nomenclature",
+      "required": true
+    },
+    "comments": {
+      "type_widget": "text",
+      "attribut_label": "Commentaires"
+    },
+    "medias": {
+      "type_widget": "medias",
+      "attribut_label": "Médias",
+      "schema_dot_table": "gn_monitoring.t_observations",
+      "hidden": true
+    }
+  }
+}

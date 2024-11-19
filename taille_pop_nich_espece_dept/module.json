@@ -1,0 +1,12 @@
+{
+  "module_label":"Taille de population de [espèce] - Départements",
+  "module_desc":"Données de synthèse par année des [espèce] aux départements",
+  
+  "b_draw_sites_group": false,
+
+  "display_properties": [
+    "module_label",
+    "module_desc"
+  ]
+}
+

@@ -1,0 +1,196 @@
+{
+    "types": [
+      {
+        "mnemonique": "UNITE_D_SYNTHESE",
+        "label_default": "Unité de données de synthèse",
+        "definition_default": "Nomenclature des unités de données de synthèse (module taille_pop)",
+        "label_fr": "Unité de données de synthèse",
+        "definition_fr": "Nomenclature des unités de données de synthèse (module taille_pop)"
+      },
+      {
+        "mnemonique": "FIABILITE",
+        "label_default": "Fiabilité de la donnée",
+        "definition_default": "Nomenclature de la fiabilité de la donnée (module taille_pop)",
+        "label_fr": "Fiabilité de la donnée",
+        "definition_fr": "Nomenclature de la fiabilité de la donnée (module taille_pop)"
+      }
+    ],
+
+    "nomenclatures": [
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "01",
+            "mnemonique": "Couples",
+            "label_default": "Couples",
+            "definition_default": "Couples"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "02",
+            "mnemonique": "Couples suivis",
+            "label_default": "Couples suivis",
+            "definition_default": "Couples suivis"
+        },
+            {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "03",
+            "mnemonique": "Couples territoriaux",
+            "label_default": "Couples territoriaux",
+            "definition_default": "Couples territoriaux"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "04",
+            "mnemonique": "Couples reproducteurs",
+            "label_default": "Couples reproducteurs",
+            "definition_default": "Couples reproducteurs"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "05",
+            "mnemonique": "Couples producteurs",
+            "label_default": "Couples producteurs",
+            "definition_default": "Couples producteurs"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "06",
+            "mnemonique": "Couples mixtes",
+            "label_default": "Couples mixtes",
+            "definition_default": "Couples mixtes"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "07",
+            "mnemonique": "Individus",
+            "label_default": "Individus",
+            "definition_default": "Individus"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "08",
+            "mnemonique": "Estimation d'individus",
+            "label_default": "Estimation d'individus",
+            "definition_default": "Estimation d'individus"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "09",
+            "mnemonique": "Jeunes",
+            "label_default": "Jeunes",
+            "definition_default": "Jeunes"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "10",
+            "mnemonique": "Jeunes à l'envol",
+            "label_default": "Jeunes à l'envol",
+            "definition_default": "Jeunes à l'envol"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "11",
+            "mnemonique": "Mâles/ Mâles chanteurs",
+            "label_default": "Mâles/ Mâles chanteurs",
+            "definition_default": "Mâles/ Mâles chanteurs"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "12",
+            "mnemonique": "Nids/Terriers/Sites occupés",
+            "label_default": "Nids/Terriers/Sites occupés",
+            "definition_default": "Nids/Terriers/Sites occupés"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "13",
+            "mnemonique": "Journées de surveillance",
+            "label_default": "Journées de surveillance",
+            "definition_default": "Journées de surveillance"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "14",
+            "mnemonique": "Journées/personne",
+            "label_default": "Journées/personne",
+            "definition_default": "Journées/personne"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "15",
+            "mnemonique": "Surveillants",
+            "label_default": "Surveillants",
+            "definition_default": "Surveillants"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "16",
+            "mnemonique": "Succès reproducteur",
+            "label_default": "Succès reproducteur",
+            "definition_default": "Succès reproducteur"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "17",
+            "mnemonique": "Succès de la reproduction",
+            "label_default": "Succès de la reproduction",
+            "definition_default": "Succès de la reproduction"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "18",
+            "mnemonique": "Taux de jeunes à l'envol",
+            "label_default": "Taux de jeunes à l'envol",
+            "definition_default": "Taux de jeunes à l'envol"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "19",
+            "mnemonique": "Taux d'échec de reproduction",
+            "label_default": "Taux d'échec de reproduction",
+            "definition_default": "Taux d'échec de reproduction"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "20",
+            "mnemonique": "Estimation d'individus retenue (OM)",
+            "label_default": "Estimation d'individus retenue (OM)",
+            "definition_default": "Estimation d'individus retenue (OM)"
+        },
+        {
+            "type":"UNITE_D_SYNTHESE",
+            "cd_nomenclature": "21",
+            "mnemonique": "Pourcentage de variation du nombre de couples",
+            "label_default": "Pourcentage de variation du nombre de couples",
+            "definition_default": "Pourcentage de variation du nombre de couples"
+        },
+        {
+            "type":"FIABILITE",
+            "cd_nomenclature": "01",
+            "mnemonique": "Inconnue",
+            "label_default": "Inconnue",
+            "definition_default": "Inconnue"
+        },
+        {
+            "type":"FIABILITE",
+            "cd_nomenclature": "02",
+            "mnemonique": "Complète",
+            "label_default": "Complète",
+            "definition_default": "Complète"
+        },
+        {
+            "type":"FIABILITE",
+            "cd_nomenclature": "03",
+            "mnemonique": "Incomplète",
+            "label_default": "Incomplète",
+            "definition_default": "Incomplète"
+        },
+        {
+            "type":"FIABILITE",
+            "cd_nomenclature": "04",
+            "mnemonique": "Très incomplète",
+            "label_default": "Très incomplète",
+            "definition_default": "Très incomplète"
+        }
+    ]
+  }
