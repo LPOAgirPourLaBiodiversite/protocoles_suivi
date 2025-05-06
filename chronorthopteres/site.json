@@ -33,8 +33,7 @@
       "value": {
         "code_nomenclature_type": "TYPE_SITE",
         "cd_nomenclature": "CHROCAPT"
-      },
-      "hidden": true
+      }
     },
     "CodeHabitatStation1":{
       "type_widget": "datalist",
