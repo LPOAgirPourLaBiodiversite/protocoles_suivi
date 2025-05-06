@@ -32,7 +32,7 @@
       "required": true,
       "value": {
         "code_nomenclature_type": "TYPE_SITE",
-        "cd_nomenclature": "CHROCAPT"
+        "cd_nomenclature": "CHROCAPT2"
       }
     },
     "CodeHabitatStation1":{
