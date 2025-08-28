@@ -74,7 +74,7 @@
     "date_changement_etat_site": {
       "type_widget": "date",
       "attribut_label": "Date des travaux sur le site",
-      "definition": "À ne renseigner que pour le premier passage de l'année",
+      "definition": "À ne renseigner que pour le premier passage de l'année.",
       "required": false,
       "hidden": "({value}) => value.etat_site === 'Site existant' || (value.num_passage !== 1)"
     },
