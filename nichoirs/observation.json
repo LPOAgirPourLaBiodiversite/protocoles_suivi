@@ -55,7 +55,7 @@
     },
     "comments": {
       "type_widget": "text",
-      "attribut_label": "remarque supplémentaire (date d'envole poussin)",
+      "attribut_label": "Remarque supplémentaire (date d'envol des jeunes)",
       "hidden": false,
       "required": false
     },
