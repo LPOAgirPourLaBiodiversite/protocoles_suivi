@@ -5,6 +5,7 @@
   "display_properties": [
     "visit_date_min",
     "observers",
+    "id_dataset",
     "etat_nichoir",
     "nidification",
     "comments"

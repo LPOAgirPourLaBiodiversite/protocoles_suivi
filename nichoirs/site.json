@@ -57,6 +57,13 @@
       "attribut_label": "Date de pose",
       "required": true
     },
+    "id_dataset": {
+      "type_widget": "dataset",
+      "attribut_label": "Jeu de données",
+      "type_util": "dataset",
+      "required": true,
+      "module_code": "__MODULE.MODULE_CODE"
+    },
     "pose_localisation": {
       "type_widget": "select",
       "attribut_label": "Lieu de pose",
