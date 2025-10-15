@@ -10,6 +10,7 @@
     "referent_tel",
     "base_site_name",
     "base_site_code",
+    "id_dataset",
     "first_use_date",
     "pose_localisation",
     "localite_precision",
