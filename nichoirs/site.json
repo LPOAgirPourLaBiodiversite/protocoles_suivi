@@ -61,7 +61,7 @@
       "type_widget": "dataset",
       "attribut_label": "Jeu de données",
       "type_util": "dataset",
-      "required": true,
+      "required": false,
       "module_code": "__MODULE.MODULE_CODE"
     },
     "pose_localisation": {
