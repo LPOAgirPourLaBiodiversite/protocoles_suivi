@@ -1,0 +1,56 @@
+{
+  "display_properties": [
+    "uuid_base_visit",
+    "an",
+    "periode",
+    "nb_couples",
+    "nb_jeunes",
+    "nb_ind",
+    "comments"
+  ],
+
+  "display_list": [
+    "uuid_observation",
+    "an",
+    "periode",
+    "nb_couples",
+    "nb_jeunes",
+    "nb_ind",
+    "comments"
+  ],
+"specific": {
+    "an" :{
+      "type_widget": "number",
+      "required": true
+      }
+    ,
+    "periode": {
+        "type_widget": "radio",
+        "attribut_label": "Période",
+        "values": ["Hiver", "Reproduction"]
+        },
+        "nb_couples": {
+        "type_widget": "number",
+        "attribut_label": "Nombre total de couples",
+        "hidden": "({value}) => value.test != 'Reproduction'",
+        "required": false
+        },
+        "nb_jeunes": {
+        "type_widget": "number",
+        "attribut_label": "Nombre de jeunes",
+        "hidden": "({value}) => value.test != 'Reproduction'",
+        "required": false
+        },
+        "nb_ind": {
+        "type_widget": "number",
+        "attribut_label": "Nombre d'individus",
+        "hidden": "({value}) => value.test != 'Hiver'",
+        "required": false
+        }, 
+    "comments":{
+    "attribut_label": "Remarques",
+    "type_widget": "textarea"
+    }
+  }
+}
+

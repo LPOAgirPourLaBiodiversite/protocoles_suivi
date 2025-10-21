@@ -1,0 +1,40 @@
+{
+
+  "label": "Départements",
+  "label_list": "Départements",
+
+
+  "display_properties": [
+    "id_sites_group",
+    "base_site_name",
+    "comments",    
+    "nb_visits"
+  ],
+
+  "display_list": [
+    "id_sites_group",
+    "base_site_name",
+    "nb_visits"
+   ], 
+
+  "geometry_type": "Polygon",
+
+
+  "specific": {
+      
+    "base_site_code": {
+      "attribut_label": "Département",
+      "required": false,
+      "title":"Numéro du département",
+      "hidden": true
+    },
+
+    "base_site_name": {
+      "attribut_label": "Nom du département",
+      "required": true,
+      "value": "Blaireautière de ",
+      "title":"Nom unique associé à chaque blaireautière. Doit commencer par 'Blaireautière de... suivie du nom de lieu-dit'. Si plusieurs blaireautières sont sur un même lieu-dit, détailler en rajoutant nord, sud, est ou ouest, ou autre.",
+      "hidden": false 
+    } 
+  }
+}

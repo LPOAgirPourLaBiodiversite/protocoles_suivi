@@ -1,0 +1,8 @@
+{
+    "module_label":"Synthèse de suivis",
+    "module_desc":"Module permettant la synthèse annuelle de suivi",
+    "export_csv": [
+      { "label": "Télécharger le CSV", "type":"csv" , "method": "telecharger_csv" }
+     ]
+}
+
