@@ -19,7 +19,7 @@
     "hidden": true
     }
   ,
-    "dataset" :{
+    "id_dataset" :{
     "hidden": true
     }
   ,    
@@ -35,6 +35,10 @@
     "attribut_label": "Remarques",
     "type_widget": "textarea"
     }
+    ,
+  "media":{
+    "hidden":true
+  }
   }
 }
 
