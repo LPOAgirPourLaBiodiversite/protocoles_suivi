@@ -2,13 +2,11 @@
   "description_field_name": "an",
   "chained": false,
   "display_properties": [
-    "observers",
     "an",
     "comments"
   ],
   "display_list": [
     "an",
-    "observers",
     "comments"
   ],
   "specific": {
