@@ -2,26 +2,17 @@
   "display_properties": [
     "uuid_base_visit",
     "an",
-    "cd_nom",
-    "periode",
-    "nb_couples",
-    "nb_jeunes",
-    "nb_ind",
     "comments"
   ],
 
   "display_list": [
     "uuid_observation",
     "an",
-    "cd_nom",
-    "periode",
-    "nb_couples",
-    "nb_jeunes",
-    "nb_ind",
     "comments"
   ],
 "specific": {
     "an" :{
+      "attribut_label": "Année",
       "type_widget": "number",
       "required": true,
       "min": 1990,
@@ -33,34 +24,11 @@
         "attribut_label": "Période",
         "values": ["Hiver", "Reproduction"]
         },
-        "nb_couples": {
-        "type_widget": "number",
-        "attribut_label": "Nombre total de couples",
-        "hidden": "({value}) => value.test != 'Reproduction'",
-        "required": false
-        },
-        "nb_jeunes": {
-        "type_widget": "number",
-        "attribut_label": "Nombre de jeunes",
-        "hidden": "({value}) => value.test != 'Reproduction'",
-        "required": false
-        },
-        "nb_ind": {
-        "type_widget": "number",
-        "attribut_label": "Nombre d'individus",
-        "hidden": "({value}) => value.test != 'Hiver'",
-        "required": false
-        }, 
+        
     "comments":{
     "attribut_label": "Remarques",
     "type_widget": "textarea"
-    },
-      "medias": {
-      "hidden": true,
-      "type_widget": "medias",
-      "attribut_label": "Médias",
-      "schema_dot_table": "gn_monitoring.t_observations"
     }
-  }
+    }
 }
 

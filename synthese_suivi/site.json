@@ -32,8 +32,6 @@
     "base_site_name": {
       "attribut_label": "Nom du département",
       "required": true,
-      "value": "Blaireautière de ",
-      "title":"Nom unique associé à chaque blaireautière. Doit commencer par 'Blaireautière de... suivie du nom de lieu-dit'. Si plusieurs blaireautières sont sur un même lieu-dit, détailler en rajoutant nord, sud, est ou ouest, ou autre.",
       "hidden": false 
     } 
   }

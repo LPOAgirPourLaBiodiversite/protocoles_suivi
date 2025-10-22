@@ -1,0 +1,58 @@
+{
+  "display_properties": [
+    "uuid_observation",
+    "cd_nom",
+    "nb_couples",
+    "nb_jeunes",
+    "nb_ind",
+    "comments"
+  ],
+
+
+  "display_list": [
+    "uuid_observation",
+    "cd_nom",
+    "nb_couples",
+    "nb_jeunes",
+    "nb_ind",
+    "statut_observation"
+  ],
+
+  "specific": {
+    
+    "cd_nom": {
+        "type_widget": "taxonomy",
+        "attribut_label": "Taxon",
+        "type_util": "taxonomy",
+        "required": true,
+        "id_list": "__MODULE.ID_LIST_TAXONOMY"
+    },
+  "nb_couples": {
+        "type_widget": "number",
+        "attribut_label": "Nombre total de couples",
+        "hidden": "({value}) => value.periode != 'Reproduction'",
+        "required": false
+        },
+        "nb_jeunes": {
+        "type_widget": "number",
+        "attribut_label": "Nombre de jeunes",
+        "hidden": "({value}) => value.periode != 'Reproduction'",
+        "required": false
+        },
+        "nb_ind": {
+        "type_widget": "number",
+        "attribut_label": "Nombre d'individus",
+        "hidden": "({value}) => value.periode != 'Hiver'",
+        "required": false
+        }, 
+
+
+    "comments" : {
+      "type_widget": "textarea",
+      "required": false
+    }
+
+  }
+
+}
+    
