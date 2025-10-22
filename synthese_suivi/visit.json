@@ -1,21 +1,24 @@
 {
   "description_field_name": "an",
+  "chained": false,
   "display_properties": [
     "uuid_base_visit",
+    "observers",
     "an",
     "comments"
   ],
   "display_list": [
     "uuid_observation",
     "an",
+    "observers",
     "comments"
   ],
   "specific": {
-    "visit_date_min": {
-      "hidden": true
-    },
     "observers": {
-      "hidden": true
+      "hidden": false
+    },
+    "visit_date_min":{
+      "hidden":false
     },
     "id_dataset": {
       "hidden": true
@@ -29,6 +32,9 @@
     "comments": {
       "attribut_label": "Remarques",
       "type_widget": "textarea"
+    },
+    "medias": {
+      "hidden": true
     }
   }
 }
