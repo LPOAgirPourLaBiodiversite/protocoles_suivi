@@ -2,13 +2,11 @@
   "description_field_name": "an",
   "chained": false,
   "display_properties": [
-    "uuid_base_visit",
     "observers",
     "an",
     "comments"
   ],
   "display_list": [
-    "uuid_observation",
     "an",
     "observers",
     "comments"

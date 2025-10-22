@@ -1,7 +1,6 @@
 { "chained": false,
   "description_field_name": "cd_nom",
   "display_properties": [
-    "uuid_observation",
     "cd_nom",
     "periode",
     "nb_couples",
