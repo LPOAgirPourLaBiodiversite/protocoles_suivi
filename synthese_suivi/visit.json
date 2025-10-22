@@ -5,40 +5,33 @@
     "an",
     "comments"
   ],
-
   "display_list": [
     "uuid_observation",
     "an",
     "comments"
   ],
-"specific": {
-   "visit_date_min":{
-    "hidden": true
-  },
-    "observers" :{
-    "hidden": true
-    }
-  ,
-    "id_dataset" :{
-    "hidden": true
-    }
-  ,    
-  "an" :{
+  "specific": {
+    "visit_date_min": {
+      "hidden": true
+    },
+    "observers": {
+      "hidden": true
+    },
+    "id_dataset": {
+      "hidden": true
+    },
+    "an": {
       "attribut_label": "Année",
       "type_widget": "select",
       "required": true,
       "values": ["2023", "2024", "2025"]
-      }
-    ,
-
-  "comments":{
-    "attribut_label": "Remarques",
-    "type_widget": "textarea"
+    },
+    "comments": {
+      "attribut_label": "Remarques",
+      "type_widget": "textarea"
+    },
+    "media": {
+      "hidden": true
     }
-    ,
-  "media":{
-    "hidden":true
-  }
   }
 }
-
