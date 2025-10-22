@@ -17,7 +17,7 @@
     "nb_couples",
     "nb_jeunes",
     "nb_ind",
-    "statut_observation"
+    "comments"
   ],
 
   "specific": {
