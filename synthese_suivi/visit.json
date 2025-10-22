@@ -25,10 +25,9 @@
   ,    
   "an" :{
       "attribut_label": "Année",
-      "type_widget": "number",
+      "type_widget": "select",
       "required": true,
-      "min": 1990,
-      "max": 2030
+      "values": ["2023", "2024", "2025"]
       }
     ,
     "periode": {
