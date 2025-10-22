@@ -12,10 +12,7 @@
     "comments"
   ],
 "specific": {
-  "visit_date_min":{
-    "hidden": true
-  },
-  "observers" :{
+   "observers" :{
     "hidden": true
     }
   ,
@@ -31,7 +28,7 @@
       }
     ,
 
-    "comments":{
+  "comments":{
     "attribut_label": "Remarques",
     "type_widget": "textarea"
     }
