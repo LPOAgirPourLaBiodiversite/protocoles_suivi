@@ -9,7 +9,6 @@
     "comments"
   ],
 
-
   "display_list": [
     "uuid_observation",
     "cd_nom",
@@ -21,45 +20,39 @@
   ],
 
   "specific": {
-    
     "cd_nom": {
-        "type_widget": "taxonomy",
-        "attribut_label": "Taxon",
-        "type_util": "taxonomy",
-        "required": true,
-        "id_list": "__MODULE.ID_LIST_TAXONOMY"
+      "type_widget": "taxonomy",
+      "attribut_label": "Taxon",
+      "type_util": "taxonomy",
+      "required": true,
+      "id_list": "__MODULE.ID_LIST_TAXONOMY"
     },
     "periode": {
-        "type_widget": "radio",
-        "attribut_label": "Période",
-        "values": ["Hiver", "Reproduction"]
-        },
-      "nb_couples": {
-        "type_widget": "number",
-        "attribut_label": "Nombre total de couples",
-        "hidden": "({value}) => value.periode != 'Reproduction'",
-        "required": false
-        },
-        "nb_jeunes": {
-        "type_widget": "number",
-        "attribut_label": "Nombre de jeunes",
-        "hidden": "({value}) => value.periode != 'Reproduction'",
-        "required": false
-        },
-        "nb_ind": {
-        "type_widget": "number",
-        "attribut_label": "Nombre d'individus",
-        "hidden": "({value}) => value.periode != 'Hiver'",
-        "required": false
-        }, 
-
-
-    "comments" : {
+      "type_widget": "radio",
+      "attribut_label": "Période",
+      "values": ["Hiver", "Reproduction"]
+    },
+    "nb_couples": {
+      "type_widget": "number",
+      "attribut_label": "Nombre total de couples",
+      "hidden": "({value}) => value.periode != 'Reproduction'",
+      "required": false
+    },
+    "nb_jeunes": {
+      "type_widget": "number",
+      "attribut_label": "Nombre de jeunes",
+      "hidden": "({value}) => value.periode != 'Reproduction'",
+      "required": false
+    },
+    "nb_ind": {
+      "type_widget": "number",
+      "attribut_label": "Nombre d'individus",
+      "hidden": "({value}) => value.periode != 'Hiver'",
+      "required": false
+    },
+    "comments": {
       "type_widget": "textarea",
       "required": false
     }
-
   }
-
 }
-    
