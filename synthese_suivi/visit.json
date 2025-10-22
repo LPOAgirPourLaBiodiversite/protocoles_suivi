@@ -14,7 +14,11 @@
   "observers" :{
     "hidden": true
     }
-  ,  
+  ,
+    "dataset" :{
+    "hidden": true
+    }
+  ,    
   "an" :{
       "attribut_label": "Année",
       "type_widget": "number",
