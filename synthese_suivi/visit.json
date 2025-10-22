@@ -29,9 +29,6 @@
     "comments": {
       "attribut_label": "Remarques",
       "type_widget": "textarea"
-    },
-    "media": {
-      "hidden": true
     }
   }
 }
