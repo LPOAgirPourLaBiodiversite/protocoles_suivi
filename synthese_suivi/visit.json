@@ -11,7 +11,11 @@
     "comments"
   ],
 "specific": {
-    "an" :{
+  "observers" :{
+    "hidden": true
+    }
+  ,  
+  "an" :{
       "attribut_label": "Année",
       "type_widget": "number",
       "required": true,
