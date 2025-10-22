@@ -30,12 +30,7 @@
       "values": ["2023", "2024", "2025"]
       }
     ,
-    "periode": {
-        "type_widget": "radio",
-        "attribut_label": "Période",
-        "values": ["Hiver", "Reproduction"]
-        },
-        
+         
     "comments":{
     "attribut_label": "Remarques",
     "type_widget": "textarea"
