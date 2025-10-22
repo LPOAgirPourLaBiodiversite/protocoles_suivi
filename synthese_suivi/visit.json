@@ -12,6 +12,9 @@
     "comments"
   ],
 "specific": {
+  "visit_date_min":{
+    "hidden": true
+  },
   "observers" :{
     "hidden": true
     }
