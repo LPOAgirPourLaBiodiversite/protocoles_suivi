@@ -1,5 +1,4 @@
 {
-  "description_field_name": "an",
   "display_properties": [
     "uuid_base_visit",
     "an",
@@ -12,7 +11,10 @@
     "comments"
   ],
 "specific": {
-   "observers" :{
+   "visit_date_min":{
+    "hidden": true
+  },
+    "observers" :{
     "hidden": true
     }
   ,
