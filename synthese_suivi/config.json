@@ -1,11 +1,13 @@
 {
   "tree": {
     "module": {
-        "site": {
-          "visit": {
-            "observation":null
+      "site": {
+        "visit": {
+          "observation": {
+            "observation_detail": null
           }
         }
-     }
-   }
+      }
+    }
+  }
 }
