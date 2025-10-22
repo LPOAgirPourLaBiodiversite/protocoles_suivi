@@ -2,6 +2,7 @@
   "display_properties": [
     "uuid_observation",
     "cd_nom",
+    "periode",
     "nb_couples",
     "nb_jeunes",
     "nb_ind",
@@ -12,6 +13,7 @@
   "display_list": [
     "uuid_observation",
     "cd_nom",
+    "periode",
     "nb_couples",
     "nb_jeunes",
     "nb_ind",
@@ -27,7 +29,12 @@
         "required": true,
         "id_list": "__MODULE.ID_LIST_TAXONOMY"
     },
-  "nb_couples": {
+    "periode": {
+        "type_widget": "radio",
+        "attribut_label": "Période",
+        "values": ["Hiver", "Reproduction"]
+        },
+      "nb_couples": {
         "type_widget": "number",
         "attribut_label": "Nombre total de couples",
         "hidden": "({value}) => value.periode != 'Reproduction'",
