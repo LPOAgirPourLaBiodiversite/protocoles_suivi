@@ -2,6 +2,7 @@
   "display_properties": [
     "uuid_base_visit",
     "an",
+    "cd_nom",
     "periode",
     "nb_couples",
     "nb_jeunes",
@@ -12,6 +13,7 @@
   "display_list": [
     "uuid_observation",
     "an",
+    "cd_nom",
     "periode",
     "nb_couples",
     "nb_jeunes",
@@ -21,7 +23,9 @@
 "specific": {
     "an" :{
       "type_widget": "number",
-      "required": true
+      "required": true,
+      "min": 1990,
+      "max": 2030
       }
     ,
     "periode": {
@@ -50,6 +54,12 @@
     "comments":{
     "attribut_label": "Remarques",
     "type_widget": "textarea"
+    },
+      "medias": {
+      "hidden": true,
+      "type_widget": "medias",
+      "attribut_label": "Médias",
+      "schema_dot_table": "gn_monitoring.t_observations"
     }
   }
 }
