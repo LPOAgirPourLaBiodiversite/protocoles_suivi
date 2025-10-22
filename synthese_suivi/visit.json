@@ -1,4 +1,5 @@
 {
+  "description_field_name": "an",
   "display_properties": [
     "uuid_base_visit",
     "an",
@@ -34,10 +35,6 @@
     "attribut_label": "Remarques",
     "type_widget": "textarea"
     }
-    ,
-  "media":{
-    "hidden":true
   }
-    }
 }
 
