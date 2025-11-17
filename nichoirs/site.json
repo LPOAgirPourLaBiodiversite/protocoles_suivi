@@ -10,6 +10,7 @@
     "referent_tel",
     "base_site_name",
     "base_site_code",
+    "id_dataset",
     "first_use_date",
     "pose_localisation",
     "localite_precision",
@@ -55,6 +56,13 @@
       "type_widget": "date",
       "attribut_label": "Date de pose",
       "required": true
+    },
+    "id_dataset": {
+      "type_widget": "dataset",
+      "attribut_label": "Jeu de données",
+      "type_util": "dataset",
+      "required": false,
+      "module_code": "__MODULE.MODULE_CODE"
     },
     "pose_localisation": {
       "type_widget": "select",
