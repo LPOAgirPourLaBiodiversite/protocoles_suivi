@@ -1,0 +1,18 @@
+{
+  "types": [
+    {
+      "mnemonique": "TYPE_SITE",
+      "label_default": "Type de sites",
+      "definition_default": "Nomenclature des types de sites suivi dans gn_monitoring."
+    }
+  ],
+  "nomenclatures": [
+  {
+      "type":"TYPE_SITE",
+      "cd_nomenclature": "CHROCAPT2",
+      "mnemonique": "chronOrthoptères",
+      "label_default": "Site chronOrthoptères",
+      "definition_default": "Site de relevé du protocole chronOrthoptères"
+    }
+  ]
+}
