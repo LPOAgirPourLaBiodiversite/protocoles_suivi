@@ -92,8 +92,8 @@ SELECT
     -- Site et variables associées
     REPLACE(trim(unaccent(s.base_site_name)), ' ', '_') AS nom_site, -- Uniformisation site
     st_astext(s.geom) as wkt_wgs,
-    st_x(s.geom) AS x_wgs,
-    st_y(s.geom) AS y_wgs,
+    st_x(st_centroid(s.geom)) AS x_wgs,
+    st_y(st_centroid(s.geom)) AS y_wgs,
     s.altitude_min AS altitude_min,
     s.altitude_max AS altitude_max,
     i.departement AS departement,
@@ -146,7 +146,7 @@ LEFT JOIN gn_meta.t_datasets d USING (id_dataset)
 LEFT JOIN info_sites i USING (id_base_site)
 LEFT JOIN obs USING (id_base_visit)
 LEFT JOIN methods USING (id_base_visit)
-WHERE m.module_code = 'popamphibien'
+WHERE m.module_code = :module_code
 ORDER BY v.id_dataset, tsg.sites_group_name, s.base_site_name, visit_date_min;
 
 ---------------------------------------------------POPAmphibien analyses------------------------------------------
@@ -240,8 +240,8 @@ SELECT
     tsg.comments AS commentaire_aire,
     REPLACE(trim(unaccent(s.base_site_name)), ' ', '_') AS nom_site, -- Uniformisation site
     st_astext(s.geom) AS wkt_wgs,
-    st_x(s.geom) AS x_wgs,
-    st_y(s.geom) AS y_wgs,
+    st_x(st_centroid(s.geom)) AS x_wgs,
+    st_y(st_centroid(s.geom)) AS y_wgs,
     s.altitude_min AS altitude_min,
     s.altitude_max AS altitude_max,
     i.departement AS departement,
@@ -287,5 +287,5 @@ LEFT JOIN gn_meta.t_datasets d ON d.id_dataset = v.id_dataset
 LEFT JOIN info_sites i USING (id_base_site)
 LEFT JOIN obs USING (id_base_visit)
 LEFT JOIN methods USING (id_base_visit)
-WHERE m.module_code = 'popamphibien'
+WHERE m.module_code = :module_code
 ORDER BY v.id_dataset, tsg.sites_group_name, s.base_site_name, visit_date_min;
