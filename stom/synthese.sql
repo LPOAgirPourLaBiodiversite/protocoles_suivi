@@ -47,7 +47,7 @@ AS WITH source AS (
     v.id_base_site,
     v.id_base_visit,
     coalesce(((toc.data ->> 'nb_0_5'::text)::integer),0) + coalesce(((toc.data ->> 'nb_5_10'::text)::integer),0) + coalesce(((toc.data ->> 'nb_10_15'::text)::integer),0) + coalesce(((toc.data ->> 'nb_hors_proto'::text)::integer),0)       AS count_min,
-	  coalesce(((toc.data ->> 'nb_0_5'::text)::integer),0) + coalesce(((toc.data ->> 'nb_5_10'::text)::integer),0) + coalesce(((toc.data ->> 'nb_10_15'::text)::integer),0) + coalesce(((toc.data ->> 'nb_hors_proto'::text)::integer),0)       AS count_max,
+	  coalesce(((toc.data ->> 'nb_0_5'::text)::integer),0) + coalesce(((toc.data ->> 'nb_5_10'::text)::integer),0) + coalesce(((toc.data ->> 'nb_10_15'::text)::integer),0) + coalesce(((toc.data ->> 'nb_hors_proto'::text)::integer),0)       AS count_max
    FROM gn_monitoring.t_base_visits v
      JOIN gn_monitoring.t_base_sites s ON s.id_base_site = v.id_base_site
      JOIN gn_commons.t_modules m ON m.id_module = v.id_module
