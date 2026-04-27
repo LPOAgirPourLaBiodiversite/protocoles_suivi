@@ -7,7 +7,7 @@
   ],
   "display_list": [
     "an",
-    "comments"
+    "periode"
   ],
   "specific": {
     "observers": {
@@ -31,13 +31,6 @@
       "required": true,
       "values": [{"value": "repro", "label": "Reproduction"},{"value": "hiver", "label": "Hivernage" }],
       "hidden": false
-    },
-    "comments": {
-      "attribut_label": "Remarques",
-      "type_widget": "textarea"
-    },
-    "medias": {
-      "hidden": true
     }
   }
 }
