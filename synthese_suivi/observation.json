@@ -8,7 +8,6 @@
   ],
 
   "display_list": [
-    "periode_parent",
     "cd_nom",
     "nb_couples",
     "nb_jeunes",
@@ -82,7 +81,7 @@
     },
     "nb_ind": {
       "type_widget": "number",
-      "attribut_label": "Nombre d'individus",
+      "attribut_label": "🟦 Nombre d'individus",
       "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'hiver'",
       "required": false
     },
