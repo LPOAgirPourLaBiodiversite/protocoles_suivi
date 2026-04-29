@@ -16,6 +16,12 @@
   ],
 
   "specific": {
+    "periode_parent": {
+      "type_widget": "text",
+      "attribut_label": "Période",
+      "default": "({meta}) => meta.parents.visit.properties.periode",
+      "disabled": true
+    },
     "cd_nom": {
       "type_widget": "taxonomy",
       "attribut_label": "Taxon",
