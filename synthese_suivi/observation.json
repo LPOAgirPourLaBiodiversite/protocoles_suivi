@@ -42,6 +42,7 @@
      "nb_couples_producteurs": {
       "type_widget": "number",
       "attribut_label": "Nombre total de couples producteurs (reproduction réussie)",
+      "definition" : "xx",
       "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'",
       "required": false
     }, 

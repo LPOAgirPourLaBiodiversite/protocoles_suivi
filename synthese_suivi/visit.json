@@ -1,4 +1,5 @@
-{
+{ "label": "Année",
+  "label_list": "an",
   "description_field_name": "an",
   "chained": false,
   "display_properties": [
