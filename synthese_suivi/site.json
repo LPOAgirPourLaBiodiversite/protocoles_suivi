@@ -5,14 +5,12 @@
 
 
   "display_properties": [
-    "id_sites_group",
     "base_site_name",
     "comments",    
     "nb_visits"
   ],
 
   "display_list": [
-    "id_sites_group",
     "base_site_name",
     "nb_visits"
    ], 
