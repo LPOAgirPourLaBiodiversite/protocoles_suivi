@@ -4,7 +4,10 @@
   "description_field_name": "cd_nom",
   "display_properties": [
     "cd_nom",
-    "periode"
+    "nb_couples",
+    "nb_jeunes",
+    "nb_ind",
+    "comments"
   ],
 
   "display_list": [
