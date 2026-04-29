@@ -1,0 +1,11 @@
+{
+  "nomenclatures": [
+    {
+      "type":"TYPE_SITE",
+      "cd_nomenclature": "SYNT_SUIVI",
+      "mnemonique": "Synthèse suivi",
+      "label_default": "Synthèse suivi",
+      "definition_default": "Synthèse suivi"
+    }
+  ]
+}
