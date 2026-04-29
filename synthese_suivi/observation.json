@@ -56,7 +56,7 @@
       "type_widget": "radio",
       "required": true,
       "values": ["oui","non"],
-      "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'"
+      "hidden": false
     },
     "heure_prospection": {
       "type_widget": "number",
