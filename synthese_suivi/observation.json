@@ -1,4 +1,6 @@
 { "chained": false,
+  "label": "Espèce",
+  "label_list": "cd_nom",
   "description_field_name": "cd_nom",
   "display_properties": [
     "cd_nom",
