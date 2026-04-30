@@ -1,6 +1,6 @@
-{ "label": "Année",
-  "label_list": "an",
-  "description_field_name": "an",
+{ "label": "Année - période",
+  "label_list": "an_periode",
+  "description_field_name": "an_periode",
   "chained": false,
   "display_properties": [
     "an",
@@ -32,6 +32,12 @@
       "required": true,
       "values": [{"value": "repro", "label": "Reproduction"},{"value": "hiver", "label": "Hivernage" }],
       "hidden": false
+    },
+    "an_periode": {
+      "attribut_label": "an_periode",
+      "type_widget": "textarea",
+      "required": true,
+      "hidden": true
     }
   }
 }
