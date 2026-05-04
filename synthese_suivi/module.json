@@ -1,8 +1,5 @@
 {
     "module_label":"Synthèse de suivis",
-    "module_desc":"Module permettant la saisie de résultats d'enquêtes",
-    "export_csv": [
-      { "label": "Télécharger le CSV", "type":"csv" , "method": "telecharger_csv" }
-     ]
+    "module_desc":"Résultats d'enquêtes"
 }
 
