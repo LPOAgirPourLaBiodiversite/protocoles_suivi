@@ -1,0 +1,43 @@
+{ "label": "Année - période",
+  "label_list": "an_periode",
+  "description_field_name": "an_periode",
+  "chained": false,
+  "display_properties": [
+    "an",
+    "periode"
+  ],
+  "display_list": [
+    "an",
+    "periode"
+  ],
+  "specific": {
+    "observers": {
+      "hidden": false
+    },
+    "visit_date_min":{
+      "hidden":false
+    },
+    "id_dataset": {
+      "hidden": true
+    },
+    "an": {
+      "attribut_label": "Année",
+      "type_widget": "select",
+      "required": true,
+      "values": ["2023", "2024", "2025","2026"]
+    },
+    "periode": {
+      "attribut_label": "Période",
+      "type_widget": "radio",
+      "required": true,
+      "values": [{"value": "repro", "label": "Reproduction"},{"value": "hiver", "label": "Hivernage" }],
+      "hidden": false
+    },
+    "an_periode": {
+      "attribut_label": "an_periode",
+      "type_widget": "textarea",
+      "required": true,
+      "hidden": true
+    }
+  }
+}

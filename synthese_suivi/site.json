@@ -1,0 +1,36 @@
+{
+
+  "label": "Département",
+  "label_list": "Département",
+
+
+  "display_properties": [
+    "base_site_name",
+    "comments",    
+    "nb_visits"
+  ],
+
+  "display_list": [
+    "base_site_name",
+    "nb_visits"
+   ], 
+
+  "geometry_type": "Polygon",
+
+
+  "specific": {
+      
+    "base_site_code": {
+      "attribut_label": "Département",
+      "required": false,
+      "title":"Numéro du département",
+      "hidden": true
+    },
+
+    "base_site_name": {
+      "attribut_label": "Nom du département",
+      "required": true,
+      "hidden": false 
+    } 
+  }
+}

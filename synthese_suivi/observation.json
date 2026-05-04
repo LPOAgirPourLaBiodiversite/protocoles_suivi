@@ -1,0 +1,90 @@
+{ "chained": false,
+  "label": "Espèce",
+  "label_list": "cd_nom",
+  "description_field_name": "cd_nom",
+  "display_properties": [
+    "cd_nom",
+    "nb_couples",
+    "nb_jeunes",
+    "nb_ind",
+    "comments"
+  ],
+
+  "display_list": [
+    "cd_nom",
+    "nb_couples",
+    "nb_jeunes",
+    "nb_ind",
+    "comments"
+  ],
+
+  "specific": {
+    "cd_nom": {
+      "type_widget": "taxonomy",
+      "attribut_label": "Taxon",
+      "type_util": "taxonomy",
+      "required": true,
+      "id_list": "__MODULE.ID_LIST_TAXONOMY"
+    },
+      "nb_sites": {
+      "type_widget": "number",
+      "attribut_label": "Nombre de sites connus (colonie, territoire occupé/couple cantonné)",
+      "hidden": false,
+      "required": false
+    },
+    "nb_couples_non_nicheurs": {
+      "type_widget": "number",
+      "attribut_label": "Nombre total de couples non nicheurs",
+      "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'",
+      "required": false
+    },
+    "nb_couples_nicheurs": {
+      "type_widget": "number",
+      "attribut_label": "Nombre total de couples nicheurs",
+      "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'",
+      "required": false
+    },
+     "nb_couples_producteurs": {
+      "type_widget": "number",
+      "attribut_label": "Nombre total de couples producteurs (reproduction réussie)",
+      "definition" : "xx",
+      "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'",
+      "required": false
+    }, 
+    "nb_jeunes": {
+      "type_widget": "number",
+      "attribut_label": "Nombre de jeunes à l'envol",
+      "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'",
+      "required": false
+    },
+    "type_comptage": {
+      "attribut_label": "Comptage exhaustif",
+      "type_widget": "radio",
+      "required": true,
+      "values": ["oui","non"],
+      "hidden": false
+    },
+    "heure_prospection": {
+      "type_widget": "number",
+      "attribut_label": "Temps de prospections (heures)",
+      "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'",
+      "required": false
+    },
+    "nb_participants": {
+      "type_widget": "number",
+      "attribut_label": "Nombre de participants",
+      "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'",
+      "required": false
+    },
+    "nb_ind": {
+      "type_widget": "number",
+      "attribut_label": "Nombre d'individus",
+      "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'hiver'",
+      "required": false
+    },
+    "comments": {
+      "type_widget": "textarea",
+      "required": false
+    }
+  }
+}
