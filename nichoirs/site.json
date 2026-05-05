@@ -61,7 +61,7 @@
       "type_widget": "dataset",
       "attribut_label": "Jeu de données",
       "type_util": "dataset",
-      "required": false,
+      "required": true,
       "module_code": "__MODULE.MODULE_CODE"
     },
     "pose_localisation": {
@@ -109,6 +109,7 @@
         "Gîte chiro (arboricole en bois)",
         "Gîte chiro (fissuricole en bois)",
         "Gîte chiro (fissuricole en béton bois)",
+        "Martinet noir",
         "Mésange bleue",
         "Mésange charbonnière",
         "Moineau friquet",
