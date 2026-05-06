@@ -26,6 +26,13 @@
       "required": true,
       "id_list": "__MODULE.ID_LIST_TAXONOMY"
     },
+    "type_comptage": {
+      "attribut_label": "Comptage exhaustif",
+      "type_widget": "radio",
+      "required": true,
+      "values": ["oui","non"],
+      "hidden": false
+    },
       "nb_sites": {
       "type_widget": "number",
       "attribut_label": "Nombre de sites connus (colonie, territoire occupé/couple cantonné)",
@@ -57,14 +64,13 @@
       "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'",
       "required": false
     },
-    "type_comptage": {
-      "attribut_label": "Comptage exhaustif",
-      "type_widget": "radio",
-      "required": true,
-      "values": ["oui","non"],
-      "hidden": false
+    "nb_ind": {
+      "type_widget": "number",
+      "attribut_label": "Nombre d'individus",
+      "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'hiver'",
+      "required": false
     },
-    "heure_prospection": {
+     "heure_prospection": {
       "type_widget": "number",
       "attribut_label": "Temps de prospections (heures)",
       "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'",
@@ -74,12 +80,6 @@
       "type_widget": "number",
       "attribut_label": "Nombre de participants",
       "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'repro'",
-      "required": false
-    },
-    "nb_ind": {
-      "type_widget": "number",
-      "attribut_label": "Nombre d'individus",
-      "hidden": "({meta}) => meta.parents.visit.properties.periode !== 'hiver'",
       "required": false
     },
     "comments": {
